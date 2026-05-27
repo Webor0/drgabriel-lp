@@ -422,15 +422,17 @@ function Testimonials() {
   );
 }
 
+const FAQ_ITEMS = [
+  { q: "O resultado é imediato?", a: "Sim. O efeito de aumento de circunferência é percebido logo após o procedimento, com estabilização nos dias seguintes." },
+  { q: "O UroFill™ é seguro?", a: "Sim. Utiliza ácido hialurônico patenteado, é realizado em consultório por urologista especializado e segue protocolo internacional da Perito Urology (EUA)." },
+  { q: "O procedimento dói?", a: "Não. É realizado com anestesia local e tem duração média de 30 minutos." },
+  { q: "Quanto tempo dura o resultado?", a: "Os resultados podem durar até 18 meses, com possibilidade de manutenção." },
+  { q: "Quando posso voltar à rotina?", a: "A maioria dos pacientes retoma as atividades em poucos dias, com orientações específicas do Dr. Gabriel." },
+];
+
 function FAQ() {
-  const items = [
-    { q: "O resultado é imediato?", a: "Sim. O efeito de aumento de circunferência é percebido logo após o procedimento, com estabilização nos dias seguintes." },
-    { q: "O UroFill™ é seguro?", a: "Sim. Utiliza ácido hialurônico patenteado, é realizado em consultório por urologista especializado e segue protocolo internacional da Perito Urology (EUA)." },
-    { q: "O procedimento dói?", a: "Não. É realizado com anestesia local e tem duração média de 30 minutos." },
-    { q: "Quanto tempo dura o resultado?", a: "Os resultados podem durar até 18 meses, com possibilidade de manutenção." },
-    { q: "Quando posso voltar à rotina?", a: "A maioria dos pacientes retoma as atividades em poucos dias, com orientações específicas do Dr. Gabriel." },
-  ];
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+
   return (
     <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16">
       <div className="max-w-3xl mx-auto text-left md:text-center space-y-4">
@@ -445,26 +447,28 @@ function FAQ() {
         </p>
       </div>
 
-      <div className="max-w-5xl mx-auto mt-12 grid md:grid-cols-2 gap-3 items-start text-left">
-        {items.map((it, i) => {
+      <div className="max-w-5xl mx-auto mt-12 grid md:grid-cols-2 gap-4 items-start">
+        {FAQ_ITEMS.map((it, i) => {
           const isOpen = openIndex === i;
           return (
-            <div key={it.q} className="premium-card px-5 py-4">
+            <div key={i} className="premium-card overflow-hidden">
               <button
                 type="button"
                 onClick={() => setOpenIndex(prev => prev === i ? null : i)}
-                className="w-full flex items-center justify-start md:justify-between gap-3 md:gap-4 text-left cursor-pointer appearance-none bg-transparent border-none p-0"
+                className="w-full flex items-center justify-between gap-4 p-5 text-left transition-colors hover:bg-black/[0.01] cursor-pointer"
               >
-                <span className="text-[color:var(--brand-light)] shrink-0 order-first md:order-last pointer-events-none">
-                  {isOpen ? <Minus size={16} strokeWidth={1.5} /> : <Plus size={16} strokeWidth={1.5} />}
+                <span className="text-[0.95rem] font-semibold text-[color:var(--brand-dark)] leading-tight">{it.q}</span>
+                <span className="text-[color:var(--brand-light)] shrink-0">
+                  {isOpen ? <Minus size={18} strokeWidth={2} /> : <Plus size={18} strokeWidth={2} />}
                 </span>
-                <span className="text-[0.95rem] font-semibold text-[color:var(--brand-dark)] pointer-events-none">{it.q}</span>
               </button>
               <div 
-                className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0'}`}
+                className={`grid transition-[grid-template-rows,opacity,padding] duration-300 ease-in-out ${
+                  isOpen ? "grid-rows-[1fr] opacity-100 pb-5 px-5" : "grid-rows-[0fr] opacity-0 pb-0 px-5"
+                }`}
               >
                 <div className="overflow-hidden">
-                  <p className="text-[0.82rem] text-[color:var(--text-secondary)] leading-snug">
+                  <p className="text-[0.85rem] text-[color:var(--text-secondary)] leading-relaxed">
                     {it.a}
                   </p>
                 </div>
