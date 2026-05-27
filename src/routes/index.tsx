@@ -12,6 +12,8 @@ import {
   Activity,
   Plus,
   Minus,
+  ChevronLeft,
+  ChevronRight,
   type LucideIcon,
 } from "lucide-react";
 
@@ -371,9 +373,15 @@ function Testimonials() {
     { name: "Jesse Junior", text: "Profissional pontual e muito competente. Foi bastante atencioso durante a consulta, respondendo todas as minhas dúvidas de forma objetiva e esclarecedora. Recomendo muito o Dr. Gabriel." },
   ];
 
+  const [idx, setIdx] = useState(0);
+  const max = reviews.length - 1;
+
+  const next = () => setIdx((current) => (current === max ? 0 : current + 1));
+  const prev = () => setIdx((current) => (current === 0 ? max : current - 1));
+
   return (
     <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16 bg-white flex justify-center overflow-hidden">
-      <div className="max-w-[var(--size-max-width)] mx-auto text-left md:text-center space-y-4 w-full">
+      <div className="max-w-[var(--size-max-width)] mx-auto text-left md:text-center space-y-4 w-full relative">
         <div className="flex justify-start md:justify-center">
           <Chip>DEPOIMENTOS DE PACIENTES</Chip>
         </div>
@@ -383,31 +391,65 @@ function Testimonials() {
           <span className="text-[color:var(--brand-light)]">Veja o que dizem:</span>
         </h2>
 
-
-        <div className="mt-10 md:mt-12 overflow-x-auto md:overflow-visible pb-4 no-scrollbar">
-          <div
-            className="flex flex-row md:justify-center gap-4 px-1"
+        <div className="relative mt-10 md:mt-12 group">
+          {/* Desktop/Tablet Navigation Arrows */}
+          <button 
+            onClick={prev}
+            className="absolute left-[-20px] top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-lg border border-gray-100 text-[color:var(--brand-dark)] hover:text-[color:var(--brand-light)] transition-all opacity-0 group-hover:opacity-100 hidden md:flex items-center justify-center"
+            aria-label="Depoimento anterior"
           >
-            {reviews.map((r, i) => (
-              <div
-                key={i}
-                className="premium-card p-5 md:p-6 text-left shrink-0 w-[85%] sm:w-[360px] md:w-[360px] space-y-3 md:space-y-4"
-              >
-                <div className="flex flex-col gap-1">
-                  <p className="text-sm font-semibold text-[color:var(--brand-dark)] leading-tight">{r.name}</p>
-                  <div className="flex">
-                    {[...Array(5)].map((_, j) => (
-                      <Star key={j} size={14} className="fill-[#F4B400] text-[#F4B400]" />
-                    ))}
+            <ChevronLeft size={20} />
+          </button>
+          
+          <button 
+            onClick={next}
+            className="absolute right-[-20px] top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-lg border border-gray-100 text-[color:var(--brand-dark)] hover:text-[color:var(--brand-light)] transition-all opacity-0 group-hover:opacity-100 hidden md:flex items-center justify-center"
+            aria-label="Próximo depoimento"
+          >
+            <ChevronRight size={20} />
+          </button>
+
+
+          <div className="overflow-x-auto md:overflow-hidden pb-4 no-scrollbar">
+            <div
+              className="flex flex-row md:justify-center gap-4 px-1 transition-transform duration-500 ease-in-out"
+              style={{ 
+                transform: `translateX(calc(-${idx} * (min(360px, 85%) + 1rem)))` 
+              }}
+            >
+              {reviews.map((r, i) => (
+                <div
+                  key={i}
+                  className="premium-card p-5 md:p-6 text-left shrink-0 w-[85%] sm:w-[360px] md:w-[360px] space-y-3 md:space-y-4"
+                >
+                  <div className="flex flex-col gap-1">
+                    <p className="text-sm font-semibold text-[color:var(--brand-dark)] leading-tight">{r.name}</p>
+                    <div className="flex">
+                      {[...Array(5)].map((_, j) => (
+                        <Star key={j} size={14} className="fill-[#F4B400] text-[#F4B400]" />
+                      ))}
+                    </div>
                   </div>
+                  <p className="text-[0.85rem] md:text-sm text-[color:var(--text-secondary)] leading-relaxed">
+                    {r.text}
+                  </p>
                 </div>
-                <p className="text-[0.85rem] md:text-sm text-[color:var(--text-secondary)] leading-relaxed">
-                  {r.text}
-                </p>
-              </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Mobile/Tablet indicators */}
+          <div className="flex justify-center gap-2 mt-4 md:hidden">
+            {reviews.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setIdx(i)}
+                className={`w-2 h-2 rounded-full transition-all ${idx === i ? "bg-[color:var(--brand-light)] w-4" : "bg-gray-200"}`}
+              />
             ))}
           </div>
         </div>
+
 
 
 
