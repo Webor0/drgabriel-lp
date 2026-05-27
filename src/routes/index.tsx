@@ -430,7 +430,7 @@ function FAQ() {
     { q: "Quanto tempo dura o resultado?", a: "Os resultados podem durar até 18 meses, com possibilidade de manutenção." },
     { q: "Quando posso voltar à rotina?", a: "A maioria dos pacientes retoma as atividades em poucos dias, com orientações específicas do Dr. Gabriel." },
   ];
-  const [open, setOpen] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
   return (
     <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16">
       <div className="max-w-3xl mx-auto text-left md:text-center space-y-4">
@@ -447,17 +447,18 @@ function FAQ() {
 
       <div className="max-w-5xl mx-auto mt-12 grid md:grid-cols-2 gap-3 items-start text-left">
         {items.map((it, i) => {
-          const isOpen = open === i;
+          const isOpen = openIndex === i;
           return (
             <div key={it.q} className="premium-card px-5 py-4">
               <button
-                onClick={() => setOpen(isOpen ? null : i)}
-                className="w-full flex items-center justify-start md:justify-between gap-3 md:gap-4 text-left cursor-pointer"
+                type="button"
+                onClick={() => setOpenIndex(prev => prev === i ? null : i)}
+                className="w-full flex items-center justify-start md:justify-between gap-3 md:gap-4 text-left cursor-pointer appearance-none bg-transparent border-none p-0"
               >
-                <span className="text-[color:var(--brand-light)] shrink-0 order-first md:order-last">
+                <span className="text-[color:var(--brand-light)] shrink-0 order-first md:order-last pointer-events-none">
                   {isOpen ? <Minus size={16} strokeWidth={1.5} /> : <Plus size={16} strokeWidth={1.5} />}
                 </span>
-                <span className="text-[0.95rem] font-semibold text-[color:var(--brand-dark)]">{it.q}</span>
+                <span className="text-[0.95rem] font-semibold text-[color:var(--brand-dark)] pointer-events-none">{it.q}</span>
               </button>
               <div 
                 className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0'}`}
