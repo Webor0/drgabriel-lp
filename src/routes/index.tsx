@@ -107,7 +107,7 @@ function WaveDivider({ flip = false }: { flip?: boolean }) {
 
 function Hero() {
   return (
-    <section className="relative px-4 md:px-8 lg:px-16 pt-8 md:pt-12 pb-16 md:pb-16 overflow-hidden min-h-[600px] flex flex-col">
+    <section className="relative px-4 md:px-8 lg:px-16 pt-8 md:pt-12 pb-12 md:pb-16 overflow-hidden min-h-[750px] md:min-h-[600px] flex flex-col">
       <img
         src={drGabrielHero}
         alt="Dr. Gabriel Veber, urologista e andrologista"
@@ -127,12 +127,12 @@ function Hero() {
       />
       
 
-      <div className="relative max-w-[var(--size-max-width)] mx-auto w-full flex-1 flex flex-col justify-between">
+      <div className="relative max-w-[var(--size-max-width)] mx-auto w-full flex-1 flex flex-col">
         <div className="flex items-center gap-4 md:gap-5 flex-nowrap mb-auto">
           <img src={logoGabriel} alt="Dr. Gabriel Veber" className="h-14 md:h-16 w-auto" />
         </div>
 
-        <div className="space-y-7 max-w-2xl mt-[320px] md:mt-12">
+        <div className="space-y-6 max-w-2xl mt-auto pt-10">
           <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.1] font-semibold">
             UroFill™:{" "}
             <span className="text-[color:var(--brand-light)]">Aumento Peniano</span> com Excelência
@@ -145,7 +145,7 @@ function Hero() {
             técnica.
           </p>
 
-          <div>
+          <div className="pb-4">
             <CTA>Quero uma avaliação personalizada</CTA>
           </div>
         </div>
