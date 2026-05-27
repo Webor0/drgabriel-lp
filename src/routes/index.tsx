@@ -120,7 +120,7 @@ function Hero() {
         className="hidden md:block lg:hidden absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
       />
       <img
-        src={heroMobileBg}
+        src="https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/i7jSnCDas3YIIdRJAnMZTTlCiDc2/4e513b5e-ae0a-44ca-8509-ca93e35d794a.png"
         alt=""
         aria-hidden="true"
         className="md:hidden absolute inset-0 w-full h-full object-cover object-bottom pointer-events-none select-none"
