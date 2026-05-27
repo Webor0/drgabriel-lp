@@ -132,7 +132,7 @@ function Hero() {
           <img src={logoGabriel} alt="Dr. Gabriel Veber" className="h-14 md:h-16 w-auto" />
         </div>
 
-        <div className="space-y-5 max-w-2xl mt-8 md:mt-12 lg:mt-16">
+        <div className="space-y-5 max-w-2xl mt-4 md:mt-6 lg:mt-8">
           <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.1] font-semibold">
             UroFill™:{" "}
             <span className="text-[color:var(--brand-light)]">Aumento Peniano</span> com Excelência
