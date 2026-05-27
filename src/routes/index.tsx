@@ -7,7 +7,7 @@ import { WhatIs } from "@/components/sections/WhatIs";
 import { Features } from "@/components/sections/Features";
 import { Credentials } from "@/components/sections/Credentials";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { LeadForm } from "@/components/sections/LeadForm";
+
 
 const SITE_URL = "https://drgabrielveber.com.br";
 const PAGE_TITLE = "Dr. Gabriel Veber — UroFill™ | Aumento Peniano com Excelência Médica";
@@ -66,7 +66,7 @@ function LandingPage() {
       <Features />
       <Credentials />
       <Testimonials />
-      <LeadForm />
+      
       <FAQ />
       <ContactFooter />
     </main>
