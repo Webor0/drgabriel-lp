@@ -395,19 +395,20 @@ function Testimonials() {
           {/* Desktop/Tablet Navigation Arrows */}
           <button 
             onClick={prev}
-            className="absolute left-[-20px] top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-lg border border-gray-100 text-[color:var(--brand-dark)] hover:text-[color:var(--brand-light)] transition-all opacity-0 group-hover:opacity-100 hidden md:flex"
+            className="absolute left-[-20px] top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-lg border border-gray-100 text-[color:var(--brand-dark)] hover:text-[color:var(--brand-light)] transition-all opacity-0 group-hover:opacity-100 hidden md:flex items-center justify-center"
             aria-label="Depoimento anterior"
           >
-            <Plus size={20} className="rotate-45" /> {/* Using Plus rotated as a simple arrow or could use Chevron if imported */}
+            <ChevronLeft size={20} />
           </button>
           
           <button 
             onClick={next}
-            className="absolute right-[-20px] top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-lg border border-gray-100 text-[color:var(--brand-dark)] hover:text-[color:var(--brand-light)] transition-all opacity-0 group-hover:opacity-100 hidden md:flex"
+            className="absolute right-[-20px] top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-lg border border-gray-100 text-[color:var(--brand-dark)] hover:text-[color:var(--brand-light)] transition-all opacity-0 group-hover:opacity-100 hidden md:flex items-center justify-center"
             aria-label="Próximo depoimento"
           >
-            <ArrowUpRight size={20} />
+            <ChevronRight size={20} />
           </button>
+
 
           <div className="overflow-x-auto md:overflow-hidden pb-4 no-scrollbar">
             <div
