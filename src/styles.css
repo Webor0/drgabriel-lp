@@ -94,10 +94,10 @@
     letter-spacing: -0.02em;
     font-weight: 600;
     color: var(--color-foreground);
-    line-height: 1.05;
+    line-height: 1.0;
   }
-  p { line-height: 1.35; margin: 0; }
-  .leading-relaxed { line-height: 1.35 !important; }
+  p { line-height: 1.25; margin: 0; }
+  .leading-relaxed { line-height: 1.25 !important; }
   .leading-tight { line-height: 1.05 !important; }
   .leading-snug { line-height: 1.15 !important; }
 
