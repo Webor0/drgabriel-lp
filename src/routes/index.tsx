@@ -18,6 +18,7 @@ import {
 import drGabrielHero from "@/assets/dr-gabriel-hero.png";
 import heroMobileBg from "@/assets/hero-mobile-bg.png";
 import heroTabletBg from "@/assets/hero-tablet-bg.png";
+import heroDesktopBg from "@/assets/hero-desktop-bg.png";
 import doctorAbout from "@/assets/doctor-about.jpg";
 import doctorCredentials from "@/assets/doctor-credentials.jpg";
 import surgery1 from "@/assets/surgery-1.jpg";
