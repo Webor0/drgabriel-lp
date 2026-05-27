@@ -624,11 +624,11 @@ function ContactFooter() {
       <div className="max-w-[var(--size-max-width)] mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
         <div className="flex items-center gap-3">
           
-          <span className="text-xs text-white/80">
+          <span className="text-xs text-white">
             © {new Date().getFullYear()} Dr. Gabriel Veber — Andrologia Moinhos. <span className="whitespace-nowrap">Todos os direitos reservados.</span>
           </span>
         </div>
-        <p className="text-xs text-white/70">CRM/RQE | Urologia & Andrologia — UroFill™</p>
+        <p className="text-xs text-white">CRM/RQE | Urologia & Andrologia — UroFill™</p>
       </div>
     </section>
   );
