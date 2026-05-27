@@ -72,7 +72,7 @@ export const Route = createFileRoute("/")({
 
 function CTA({ children, variant = "blue" }: { children: React.ReactNode; variant?: "blue" | "green" }) {
   return (
-    <a href="https://wa.me/5551989093333" target="_blank" rel="noopener noreferrer" className={`btn-cta whitespace-nowrap ${variant === "green" ? "btn-cta-green" : ""}`}>
+    <a href="https://wa.me/5551997157737?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20UroFill%E2%84%A2%20e%20entender%20como%20funciona%20a%20avalia%C3%A7%C3%A3o%20personalizada." target="_blank" rel="noopener noreferrer" className={`btn-cta whitespace-nowrap ${variant === "green" ? "btn-cta-green" : ""}`}>
       <span className="whitespace-nowrap">{children}</span>
       <span className="btn-icon">
         <ArrowUpRight size={16} strokeWidth={2.4} />
