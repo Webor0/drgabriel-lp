@@ -108,7 +108,7 @@ function WaveDivider({ flip = false }: { flip?: boolean }) {
 
 function Hero() {
   return (
-    <section className="relative px-4 md:px-8 lg:px-16 py-8 md:py-16 overflow-hidden h-[830px] md:h-auto flex flex-col items-center">
+    <section className="relative px-4 md:px-8 lg:px-16 py-8 md:py-16 overflow-hidden h-[860px] md:h-auto flex flex-col items-center">
       <img
         src={heroDesktopBg}
         alt=""
