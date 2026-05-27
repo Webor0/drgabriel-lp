@@ -83,8 +83,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Landing page oficial do UroFill™ com o Dr. Gabriel Veber, urologista especialista em aumento peniano, excelência médica e atendimento personalizado." },
       { property: "og:description", content: "Landing page oficial do UroFill™ com o Dr. Gabriel Veber, urologista especialista em aumento peniano, excelência médica e atendimento personalizado." },
       { name: "twitter:description", content: "Landing page oficial do UroFill™ com o Dr. Gabriel Veber, urologista especialista em aumento peniano, excelência médica e atendimento personalizado." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/771e74f0-149c-4ee1-ba4f-dc8ca9ec71ed/id-preview-3f588bd5--4f2e534f-75fa-4fb7-bdd3-30e6bb319d00.lovable.app-1778706156186.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/771e74f0-149c-4ee1-ba4f-dc8ca9ec71ed/id-preview-3f588bd5--4f2e534f-75fa-4fb7-bdd3-30e6bb319d00.lovable.app-1778706156186.png" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6e444a47-cba9-490f-a59a-d4551d4edfbf/id-preview-fdf58c97--fa929772-26ef-4159-bbce-f916d37c1a2e.lovable.app-1779918726390.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6e444a47-cba9-490f-a59a-d4551d4edfbf/id-preview-fdf58c97--fa929772-26ef-4159-bbce-f916d37c1a2e.lovable.app-1779918726390.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
