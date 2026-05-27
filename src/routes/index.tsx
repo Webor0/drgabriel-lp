@@ -316,7 +316,7 @@ function Credentials() {
               <div className="rounded-2xl overflow-hidden flex-1">
                 <img src={conf1} alt="" className="w-full h-full object-cover" loading="lazy" />
               </div>
-              <p className="text-xs text-[color:var(--text-secondary)] leading-snug px-1">
+              <p className="text-xs text-black leading-snug px-1">
                 Dr. Gabriel Veber ao lado de referências mundiais em Andrologia em encontro internacional.
               </p>
             </div>
@@ -324,7 +324,7 @@ function Credentials() {
               <div className="rounded-2xl overflow-hidden flex-1">
                 <img src={conf3} alt="" className="w-full h-full object-cover scale-125" loading="lazy" />
               </div>
-              <p className="text-xs text-[color:var(--text-secondary)] leading-snug px-1">
+              <p className="text-xs text-black leading-snug px-1">
                 Participação ativa nos principais congressos da especialidade.
               </p>
             </div>
