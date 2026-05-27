@@ -135,10 +135,10 @@ function Hero() {
             Reconhecimento Internacional.
           </h1>
 
-          <p className="text-[color:var(--text-secondary)] text-base md:text-lg leading-relaxed">
-            Recupere sua confiança com o procedimento de preenchimento peniano mais seguro do mundo,
-            realizado pelo Dr. Gabriel Veber, premiado internacionalmente como referência na
-            técnica.
+          <p className="text-[color:var(--text-secondary)] text-base md:text-lg leading-relaxed max-w-xl md:max-w-2xl">
+            Recupere sua confiança com o procedimento de preenchimento peniano <br className="hidden lg:block" />
+            mais seguro do mundo, realizado pelo Dr. Gabriel Veber, <br className="hidden lg:block" />
+            premiado internacionalmente como referência na técnica.
           </p>
 
           <div>
