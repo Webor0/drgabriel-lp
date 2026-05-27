@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Dr. Gabriel Veber — UroFill™" },
       { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "UroFill™ | Dr. Gabriel Veber - Referência em Aumento Peniano" },
-      { property: "og:title", content: "UroFill™ | Dr. Gabriel Veber - Referência em Aumento Peniano" },
-      { name: "twitter:title", content: "UroFill™ | Dr. Gabriel Veber - Referência em Aumento Peniano" },
-      { name: "description", content: "Recupere sua confiança com o UroFill™, procedimento seguro de aumento peniano realizado pelo Dr. Gabriel Veber. Agende sua avaliação personalizada." },
-      { property: "og:description", content: "Recupere sua confiança com o UroFill™, procedimento seguro de aumento peniano realizado pelo Dr. Gabriel Veber. Agende sua avaliação personalizada." },
-      { name: "twitter:description", content: "Recupere sua confiança com o UroFill™, procedimento seguro de aumento peniano realizado pelo Dr. Gabriel Veber. Agende sua avaliação personalizada." },
-      { property: "og:image", content: "/og-image.png" },
-      { name: "twitter:image", content: "/og-image.png" },
+      { title: "UroFill™ | Dr. Gabriel Veber" },
+      { property: "og:title", content: "UroFill™ | Dr. Gabriel Veber" },
+      { name: "twitter:title", content: "UroFill™ | Dr. Gabriel Veber" },
+      { name: "description", content: "Landing page oficial do UroFill™ com o Dr. Gabriel Veber, urologista especialista em aumento peniano, excelência médica e atendimento personalizado." },
+      { property: "og:description", content: "Landing page oficial do UroFill™ com o Dr. Gabriel Veber, urologista especialista em aumento peniano, excelência médica e atendimento personalizado." },
+      { name: "twitter:description", content: "Landing page oficial do UroFill™ com o Dr. Gabriel Veber, urologista especialista em aumento peniano, excelência médica e atendimento personalizado." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6e444a47-cba9-490f-a59a-d4551d4edfbf/id-preview-fdf58c97--fa929772-26ef-4159-bbce-f916d37c1a2e.lovable.app-1779918726390.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6e444a47-cba9-490f-a59a-d4551d4edfbf/id-preview-fdf58c97--fa929772-26ef-4159-bbce-f916d37c1a2e.lovable.app-1779918726390.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -106,26 +106,9 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TWVQMRB');`,
-          }}
-        />
         <HeadContent />
       </head>
       <body>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TWVQMRB"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
         {children}
         <Scripts />
       </body>
