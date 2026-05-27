@@ -130,9 +130,9 @@ function Hero() {
 
         <div className="space-y-5 max-w-2xl md:max-w-3xl lg:max-w-4xl mt-8 md:mt-12">
           <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.1] font-semibold">
-            UroFill™: <br className="hidden lg:block" />
-            <span className="text-[color:var(--brand-light)]">Aumento Peniano</span> <br className="hidden lg:block" />
-            com Excelência Médica e <br className="hidden lg:block" />
+            UroFill™: Aumento. <br className="hidden lg:block" />
+            <span className="text-[color:var(--brand-light)]">Peniano com.</span> <br className="hidden lg:block" />
+            Excelência Médica e. <br className="hidden lg:block" />
             Reconhecimento Internacional.
           </h1>
 
