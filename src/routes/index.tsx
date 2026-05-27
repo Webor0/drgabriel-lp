@@ -107,7 +107,7 @@ function WaveDivider({ flip = false }: { flip?: boolean }) {
 
 function Hero() {
   return (
-    <section className="relative px-4 md:px-8 lg:px-16 pt-8 md:pt-12 pb-12 md:pb-16 overflow-hidden min-h-[750px] md:min-h-[600px] flex flex-col">
+    <section className="relative px-4 md:px-8 lg:px-16 pt-8 md:pt-12 pb-8 md:pb-16 overflow-hidden min-h-[750px] md:min-h-[600px] flex flex-col">
       <img
         src={drGabrielHero}
         alt="Dr. Gabriel Veber, urologista e andrologista"
@@ -145,7 +145,7 @@ function Hero() {
             técnica.
           </p>
 
-          <div className="pb-4">
+          <div>
             <CTA>Quero uma avaliação personalizada</CTA>
           </div>
         </div>
