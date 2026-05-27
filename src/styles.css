@@ -102,19 +102,19 @@
     letter-spacing: -0.02em;
     font-weight: 600;
     color: var(--color-foreground);
-    line-height: 1.0;
+    line-height: 1.1;
   }
-  p { line-height: 1.25; margin: 0; }
-  .leading-relaxed { line-height: 1.25 !important; }
-  .leading-tight { line-height: 1.0 !important; }
-  .leading-snug { line-height: 1.25 !important; }
+  p { line-height: 1.5; margin: 0; }
+  .leading-relaxed { line-height: 1.5 !important; }
+  .leading-tight { line-height: 1.2 !important; }
+  .leading-snug { line-height: 1.4 !important; }
 
-  .space-y-3 > * + * { margin-top: 0.4rem !important; }
-  .space-y-4 > * + * { margin-top: 0.55rem !important; }
-  .space-y-5 > * + * { margin-top: 0.7rem !important; }
-  .space-y-6 > * + * { margin-top: 0.85rem !important; }
-  .space-y-7 > * + * { margin-top: 1rem !important; }
-  .space-y-10 > * + * { margin-top: 1.5rem !important; }
+  .space-y-3 > * + * { margin-top: 0.75rem !important; }
+  .space-y-4 > * + * { margin-top: 1rem !important; }
+  .space-y-5 > * + * { margin-top: 1.25rem !important; }
+  .space-y-6 > * + * { margin-top: 1.5rem !important; }
+  .space-y-7 > * + * { margin-top: 1.75rem !important; }
+  .space-y-10 > * + * { margin-top: 2.5rem !important; }
 }
 
 @layer components {
