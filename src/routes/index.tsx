@@ -113,7 +113,13 @@ function Hero() {
         src={heroDesktopBg}
         alt=""
         aria-hidden="true"
-        className="hidden md:block absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+        className="hidden lg:block absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+      />
+      <img
+        src={heroTabletBg}
+        alt=""
+        aria-hidden="true"
+        className="hidden md:block lg:hidden absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
       />
       <img
         src="https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/i7jSnCDas3YIIdRJAnMZTTlCiDc2/48436b22-7194-4d0f-ab7a-d9223f9dd762.png"
