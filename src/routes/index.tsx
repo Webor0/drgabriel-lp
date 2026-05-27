@@ -12,6 +12,8 @@ import {
   Activity,
   Plus,
   Minus,
+  ChevronLeft,
+  ChevronRight,
   type LucideIcon,
 } from "lucide-react";
 
