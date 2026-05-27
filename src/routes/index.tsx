@@ -109,10 +109,10 @@ function Hero() {
   return (
     <section className="relative px-4 md:px-8 lg:px-16 py-8 md:py-16 overflow-hidden h-[830px] md:h-auto flex flex-col">
       <img
-        src={heroTabletBg}
+        src="https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/i7jSnCDas3YIIdRJAnMZTTlCiDc2/7614503f-a864-4337-b1e0-b251aae98ae8.png"
         alt=""
         aria-hidden="true"
-        className="hidden md:block lg:hidden absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+        className="hidden md:block absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
       />
       <img
         src="https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/i7jSnCDas3YIIdRJAnMZTTlCiDc2/48436b22-7194-4d0f-ab7a-d9223f9dd762.png"
