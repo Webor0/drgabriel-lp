@@ -9,10 +9,10 @@ import { Credentials } from "@/components/sections/Credentials";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { LeadForm } from "@/components/sections/LeadForm";
 
-const SITE_URL = "https://drgabrielveberlp.lovable.app";
+const SITE_URL = "https://drgabrielveber.com.br";
 const PAGE_TITLE = "Dr. Gabriel Veber — UroFill™ | Aumento Peniano com Excelência Médica";
 const PAGE_DESCRIPTION =
-  "UroFill™: aumento de circunferência peniana com segurança médica e reconhecimento internacional. Agende uma avaliação personalizada com o Dr. Gabriel Veber.";
+  "Aumente sua confiança com o UroFill™, o procedimento de aumento peniano mais seguro e reconhecido mundialmente. Agende sua avaliação com o Dr. Gabriel Veber.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
