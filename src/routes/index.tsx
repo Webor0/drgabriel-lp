@@ -371,12 +371,9 @@ function Testimonials() {
     { name: "Jesse Junior", text: "Profissional pontual e muito competente. Foi bastante atencioso durante a consulta, respondendo todas as minhas dúvidas de forma objetiva e esclarecedora. Recomendo muito o Dr. Gabriel." },
   ];
 
-  const [idx, setIdx] = useState(0);
-  const max = Math.max(0, reviews.length - 1);
-
   return (
-    <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16 bg-white flex justify-center">
-      <div className="max-w-[var(--size-max-width)] mx-auto text-left md:text-center space-y-4">
+    <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16 bg-white flex justify-center overflow-hidden">
+      <div className="max-w-[var(--size-max-width)] mx-auto text-left md:text-center space-y-4 w-full">
         <div className="flex justify-start md:justify-center">
           <Chip>DEPOIMENTOS DE PACIENTES</Chip>
         </div>
@@ -387,15 +384,14 @@ function Testimonials() {
         </h2>
 
 
-        <div className="md:overflow-hidden mt-10 md:mt-12">
+        <div className="mt-10 md:mt-12 overflow-x-auto md:overflow-visible pb-4 no-scrollbar">
           <div
-            className="flex flex-col md:flex-row gap-4 md:justify-center md:transition-transform md:duration-500"
-            style={{ transform: `translateX(calc(${-idx} * (min(360px, 80%) + 1rem)))` }}
+            className="flex flex-row md:justify-center gap-4 px-1"
           >
             {reviews.map((r, i) => (
               <div
                 key={i}
-                className="premium-card p-5 md:p-6 text-left shrink-0 w-full md:w-[360px] space-y-3 md:space-y-4"
+                className="premium-card p-5 md:p-6 text-left shrink-0 w-[85%] sm:w-[360px] md:w-[360px] space-y-3 md:space-y-4"
               >
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-semibold text-[color:var(--brand-dark)] leading-tight">{r.name}</p>
@@ -412,6 +408,7 @@ function Testimonials() {
             ))}
           </div>
         </div>
+
 
 
         <div className="flex justify-start md:justify-center pt-4">
