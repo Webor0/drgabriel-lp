@@ -98,8 +98,8 @@
   }
   p { line-height: 1.25; margin: 0; }
   .leading-relaxed { line-height: 1.25 !important; }
-  .leading-tight { line-height: 1.05 !important; }
-  .leading-snug { line-height: 1.15 !important; }
+  .leading-tight { line-height: 1.0 !important; }
+  .leading-snug { line-height: 1.25 !important; }
 
   .space-y-3 > * + * { margin-top: 0.4rem !important; }
   .space-y-4 > * + * { margin-top: 0.55rem !important; }
