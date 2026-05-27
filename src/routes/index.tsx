@@ -18,6 +18,7 @@ import {
 import drGabrielHero from "@/assets/dr-gabriel-hero.png";
 import heroMobileBg from "@/assets/hero-mobile-bg.png";
 import heroTabletBg from "@/assets/hero-tablet-bg.png";
+import heroDesktopBg from "@/assets/hero-desktop-bg.png";
 import doctorAbout from "@/assets/doctor-about.jpg";
 import doctorCredentials from "@/assets/doctor-credentials.jpg";
 import surgery1 from "@/assets/surgery-1.jpg";
@@ -109,7 +110,7 @@ function Hero() {
   return (
     <section className="relative px-4 md:px-8 lg:px-16 py-8 md:py-16 overflow-hidden h-[830px] md:h-auto flex flex-col">
       <img
-        src="https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/i7jSnCDas3YIIdRJAnMZTTlCiDc2/7614503f-a864-4337-b1e0-b251aae98ae8.png"
+        src={heroDesktopBg}
         alt=""
         aria-hidden="true"
         className="hidden md:block absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
