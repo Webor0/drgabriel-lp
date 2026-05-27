@@ -47,7 +47,7 @@
   --color-brand-green: var(--brand-green);
   --color-surface: var(--surface);
   --color-text-secondary: var(--text-secondary);
-  --size-max-width: 1350px;
+  --size-max-width: 1300px;
 }
 
 :root {
