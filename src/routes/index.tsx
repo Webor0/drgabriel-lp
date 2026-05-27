@@ -108,7 +108,7 @@ function WaveDivider({ flip = false }: { flip?: boolean }) {
 
 function Hero() {
   return (
-    <section className="relative px-4 md:px-8 lg:px-16 py-8 md:py-16 overflow-hidden h-[830px] md:h-auto flex flex-col">
+    <section className="relative px-4 md:px-8 lg:px-16 py-8 md:py-16 overflow-hidden h-[830px] md:h-auto flex flex-col items-center">
       <img
         src={heroDesktopBg}
         alt=""
@@ -154,7 +154,7 @@ function Hero() {
 
 function WhatIs() {
   return (
-    <section className="relative px-4 md:px-8 lg:px-16 py-8 md:py-16 bg-white">
+    <section className="relative px-4 md:px-8 lg:px-16 py-8 md:py-16 bg-white flex justify-center">
       <div className="max-w-[var(--size-max-width)] mx-auto grid md:grid-cols-2 gap-10 items-stretch">
         {/* Mosaic */}
         <div className="relative md:min-h-0 order-2 md:order-2">
@@ -213,7 +213,7 @@ function Features() {
     { icon: Activity, title: "Retorno rápido à rotina", text: "Volta às atividades em poucos dias, com segurança médica." },
   ];
   return (
-    <section className="bg-white px-4 md:px-8 lg:px-16 py-8 md:py-12">
+    <section className="bg-white px-4 md:px-8 lg:px-16 py-8 md:py-12 flex justify-center">
       <div className="max-w-[var(--size-max-width)] mx-auto text-left md:text-center space-y-5">
         <div className="flex justify-start md:justify-center">
           <Chip>CARACTERÍSTICAS DO UROFILL™</Chip>
@@ -260,7 +260,7 @@ function FeatureCard({ icon: Icon, title, text }: { icon: any; title: string; te
 
 function AboutDoctor() {
   return (
-    <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16">
+    <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16 flex justify-center">
       <div className="max-w-[var(--size-max-width)] mx-auto grid md:grid-cols-2 gap-10 items-stretch">
         <div className="relative md:min-h-0 order-2 md:order-1">
           <div className="md:absolute md:inset-0 rounded-[2rem] overflow-hidden">
@@ -305,7 +305,7 @@ function Credentials() {
     "Atuação na Clínica Andrologia Moinhos — Porto Alegre/RS",
   ];
   return (
-    <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16">
+    <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16 flex justify-center">
       <div className="max-w-[var(--size-max-width)] mx-auto grid md:grid-cols-2 gap-10 items-stretch">
         {/* Photo collage */}
         <div className="grid grid-cols-3 grid-rows-3 gap-3 min-h-[420px] md:min-h-0 order-2 md:order-1">
@@ -369,7 +369,7 @@ function Testimonials() {
   const max = Math.max(0, reviews.length - 1);
 
   return (
-    <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16 bg-white">
+    <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16 bg-white flex justify-center">
       <div className="max-w-[var(--size-max-width)] mx-auto text-left md:text-center space-y-4">
         <div className="flex justify-start md:justify-center">
           <Chip>DEPOIMENTOS DE PACIENTES</Chip>
