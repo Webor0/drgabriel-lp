@@ -387,15 +387,12 @@ function Testimonials() {
         </h2>
 
 
-        <div className="md:overflow-hidden mt-10 md:mt-12">
-          <div
-            className="flex flex-col md:flex-row lg:justify-center md:transition-transform md:duration-500"
-            style={{ transform: `translateX(calc(${-idx} * (min(360px, 80%) + 1rem)))` }}
-          >
+        <div className="mt-10 md:mt-12">
+          <div className="flex flex-col lg:flex-row gap-6 lg:justify-center items-center">
             {reviews.map((r, i) => (
               <div
                 key={i}
-                className="premium-card p-5 md:p-6 text-left shrink-0 w-full lg:w-[360px] space-y-3 md:space-y-4"
+                className="premium-card p-6 md:p-8 text-left w-full max-w-2xl lg:max-w-[360px] lg:h-full space-y-4"
               >
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-semibold text-[color:var(--brand-dark)] leading-tight">{r.name}</p>
@@ -405,7 +402,7 @@ function Testimonials() {
                     ))}
                   </div>
                 </div>
-                <p className="text-[0.85rem] md:text-sm text-[color:var(--text-secondary)] leading-relaxed">
+                <p className="text-sm md:text-base text-[color:var(--text-secondary)] leading-relaxed">
                   {r.text}
                 </p>
               </div>
