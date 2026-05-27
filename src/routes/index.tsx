@@ -621,7 +621,7 @@ function LeadForm() {
 function ContactFooter() {
   return (
     <section className="px-4 md:px-8 lg:px-16 py-4 bg-[color:var(--brand-dark)]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
+      <div className="max-w-[var(--size-max-width)] mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
         <div className="flex items-center gap-3">
           
           <span className="text-xs text-white/80">
