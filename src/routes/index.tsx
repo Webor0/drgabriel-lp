@@ -107,7 +107,7 @@ function WaveDivider({ flip = false }: { flip?: boolean }) {
 
 function Hero() {
   return (
-    <section className="relative px-4 md:px-8 lg:px-16 pt-8 md:pt-12 pb-[28rem] md:pb-16 overflow-hidden">
+    <section className="relative px-4 md:px-8 lg:px-16 pt-8 md:pt-12 pb-16 md:pb-16 overflow-hidden min-h-[600px] flex flex-col">
       <img
         src={drGabrielHero}
         alt="Dr. Gabriel Veber, urologista e andrologista"
@@ -123,17 +123,17 @@ function Hero() {
         src="https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/i7jSnCDas3YIIdRJAnMZTTlCiDc2/48436b22-7194-4d0f-ab7a-d9223f9dd762.png"
         alt=""
         aria-hidden="true"
-        className="md:hidden absolute inset-0 w-full h-full object-cover object-bottom pointer-events-none select-none"
+        className="md:hidden absolute inset-0 w-full h-full object-cover object-top pointer-events-none select-none"
       />
       
 
-      <div className="relative max-w-[var(--size-max-width)] mx-auto">
-        <div className="space-y-7 max-w-2xl">
-          <div className="flex items-center gap-4 md:gap-5 flex-nowrap">
-            <img src={logoGabriel} alt="Dr. Gabriel Veber" className="h-14 md:h-16 w-auto" />
-          </div>
+      <div className="relative max-w-[var(--size-max-width)] mx-auto w-full flex-1 flex flex-col justify-between">
+        <div className="flex items-center gap-4 md:gap-5 flex-nowrap mb-auto">
+          <img src={logoGabriel} alt="Dr. Gabriel Veber" className="h-14 md:h-16 w-auto" />
+        </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.1] font-semibold pt-2 md:pt-12">
+        <div className="space-y-7 max-w-2xl mt-[320px] md:mt-12">
+          <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.1] font-semibold">
             UroFill™:{" "}
             <span className="text-[color:var(--brand-light)]">Aumento Peniano</span> com Excelência
             Médica e Reconhecimento Internacional.
