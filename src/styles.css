@@ -3,10 +3,26 @@
 @import "tw-animate-css";
 @source "../src";
 
+@font-face {
+  font-family: 'Levenim MT';
+  src: url('/fonts/LevenimMT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Levenim MT';
+  src: url('/fonts/LevenimMT-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: "Segoe UI", "Inter", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Levenim MT", "Segoe UI", "Inter", sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -85,7 +101,7 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: "Segoe UI", "Inter", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Levenim MT", "Segoe UI", "Inter", sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
