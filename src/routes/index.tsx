@@ -12,8 +12,6 @@ import {
   Activity,
   Plus,
   Minus,
-  ChevronLeft,
-  ChevronRight,
   type LucideIcon,
 } from "lucide-react";
 
@@ -373,9 +371,12 @@ function Testimonials() {
     { name: "Jesse Junior", text: "Profissional pontual e muito competente. Foi bastante atencioso durante a consulta, respondendo todas as minhas dúvidas de forma objetiva e esclarecedora. Recomendo muito o Dr. Gabriel." },
   ];
 
+  const [idx, setIdx] = useState(0);
+  const max = Math.max(0, reviews.length - 1);
+
   return (
-    <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16 bg-white flex justify-center overflow-hidden">
-      <div className="max-w-[var(--size-max-width)] mx-auto text-left md:text-center space-y-4 w-full relative">
+    <section className="px-4 md:px-8 lg:px-16 py-8 md:py-16 bg-white flex justify-center">
+      <div className="max-w-[var(--size-max-width)] mx-auto text-left md:text-center space-y-4">
         <div className="flex justify-start md:justify-center">
           <Chip>DEPOIMENTOS DE PACIENTES</Chip>
         </div>
@@ -385,8 +386,12 @@ function Testimonials() {
           <span className="text-[color:var(--brand-light)]">Veja o que dizem:</span>
         </h2>
 
-        <div className="mt-10 md:mt-12">
-          <div className="flex flex-col md:flex-row md:justify-center gap-4 px-1">
+
+        <div className="md:overflow-hidden mt-10 md:mt-12">
+          <div
+            className="flex flex-col md:flex-row gap-4 md:justify-center md:transition-transform md:duration-500"
+            style={{ transform: `translateX(calc(${-idx} * (min(360px, 80%) + 1rem)))` }}
+          >
             {reviews.map((r, i) => (
               <div
                 key={i}
@@ -407,9 +412,6 @@ function Testimonials() {
             ))}
           </div>
         </div>
-
-
-
 
 
         <div className="flex justify-start md:justify-center pt-4">
