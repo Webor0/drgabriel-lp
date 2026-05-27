@@ -127,7 +127,7 @@ function Hero() {
       />
       
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-[var(--size-max-width)] mx-auto">
         <div className="space-y-7 max-w-2xl">
           <div className="flex items-center gap-4 md:gap-5 flex-nowrap">
             <img src={logoGabriel} alt="Dr. Gabriel Veber" className="h-14 md:h-16 w-auto" />
@@ -157,7 +157,7 @@ function Hero() {
 function WhatIs() {
   return (
     <section className="relative px-4 md:px-8 lg:px-16 py-8 md:pt-20 md:pb-16 bg-white">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-stretch">
+      <div className="max-w-[var(--size-max-width)] mx-auto grid md:grid-cols-2 gap-10 items-stretch">
         {/* Mosaic */}
         <div className="relative md:min-h-0 order-2 md:order-2">
           <div className="h-[280px] md:h-auto md:absolute md:inset-0 grid grid-cols-2 grid-rows-2 gap-3">
@@ -216,7 +216,7 @@ function Features() {
   ];
   return (
     <section className="bg-white px-4 md:px-8 lg:px-16 py-8 md:py-12">
-      <div className="max-w-7xl mx-auto text-left md:text-center space-y-4">
+      <div className="max-w-[var(--size-max-width)] mx-auto text-left md:text-center space-y-4">
         <div className="flex justify-start md:justify-center">
           <Chip>CARACTERÍSTICAS DO UROFILL™</Chip>
         </div>
@@ -263,7 +263,7 @@ function FeatureCard({ icon: Icon, title, text }: { icon: any; title: string; te
 function AboutDoctor() {
   return (
     <section className="px-4 md:px-8 lg:px-16 py-8 md:py-12">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-stretch">
+      <div className="max-w-[var(--size-max-width)] mx-auto grid md:grid-cols-2 gap-10 items-stretch">
         <div className="relative md:min-h-0 order-2 md:order-1">
           <div className="md:absolute md:inset-0 rounded-[2rem] overflow-hidden">
             <img src={doctorAbout} alt="" className="w-full h-auto md:h-full object-cover object-top" loading="lazy" />
@@ -308,7 +308,7 @@ function Credentials() {
   ];
   return (
     <section className="px-4 md:px-8 lg:px-16 py-8 md:py-12">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-stretch">
+      <div className="max-w-[var(--size-max-width)] mx-auto grid md:grid-cols-2 gap-10 items-stretch">
         {/* Photo collage */}
         <div className="grid grid-cols-3 grid-rows-3 gap-3 min-h-[420px] md:min-h-0 order-2 md:order-1">
           <div className="space-y-3 row-span-3 flex flex-col">
@@ -372,7 +372,7 @@ function Testimonials() {
 
   return (
     <section className="px-4 md:px-8 lg:px-16 py-8 md:py-12 bg-white">
-      <div className="max-w-7xl mx-auto text-left md:text-center space-y-4">
+      <div className="max-w-[var(--size-max-width)] mx-auto text-left md:text-center space-y-4">
         <div className="flex justify-start md:justify-center">
           <Chip>DEPOIMENTOS DE PACIENTES</Chip>
         </div>
@@ -621,7 +621,7 @@ function LeadForm() {
 function ContactFooter() {
   return (
     <section className="px-4 md:px-8 lg:px-16 py-4 bg-[color:var(--brand-dark)]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
+      <div className="max-w-[var(--size-max-width)] mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
         <div className="flex items-center gap-3">
           
           <span className="text-xs text-white/80">

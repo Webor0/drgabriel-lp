@@ -1,7 +1,7 @@
 @import "tailwindcss" source(none);
-@source "../src";
-@import "tw-animate-css";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
+@import "tw-animate-css";
+@source "../src";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -39,6 +39,7 @@
   --color-brand-green: var(--brand-green);
   --color-surface: var(--surface);
   --color-text-secondary: var(--text-secondary);
+  --size-max-width: 1350px;
 }
 
 :root {
