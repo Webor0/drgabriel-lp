@@ -459,11 +459,15 @@ function FAQ() {
                 </span>
                 <span className="text-[0.95rem] font-semibold text-[color:var(--brand-dark)]">{it.q}</span>
               </button>
-              {isOpen && (
-                <p className="mt-2 text-[0.82rem] text-[color:var(--text-secondary)] leading-snug">
-                  {it.a}
-                </p>
-              )}
+              <div 
+                className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0'}`}
+              >
+                <div className="overflow-hidden">
+                  <p className="text-[0.82rem] text-[color:var(--text-secondary)] leading-snug">
+                    {it.a}
+                  </p>
+                </div>
+              </div>
             </div>
           );
         })}
