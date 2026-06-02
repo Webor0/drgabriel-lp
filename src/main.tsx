@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { createRouter, RouterProvider } from "@tanstack/react-router";
+import { createRouter, RouterProvider, createHashHistory } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 import "./styles.css";
 
 const queryClient = new QueryClient();
+
+const hashHistory = createHashHistory();
 
 const router = createRouter({
   routeTree,
@@ -13,7 +15,7 @@ const router = createRouter({
     queryClient,
   },
   defaultPreload: "intent",
-  history: typeof window !== 'undefined' ? (window.location.protocol === 'file:' ? undefined : undefined) : undefined,
+  history: hashHistory,
 });
 
 declare module "@tanstack/react-router" {
