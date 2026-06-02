@@ -13,6 +13,7 @@ const router = createRouter({
     queryClient,
   },
   defaultPreload: "intent",
+  history: typeof window !== 'undefined' ? (window.location.protocol === 'file:' ? undefined : undefined) : undefined,
 });
 
 declare module "@tanstack/react-router" {
